@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/todos.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="navbar"></div>
+    <main id="main">
+      <h1 id="message">This is Todos page</h1>
+      <button id="add-todo-btn">Add Todo</button>
+      <!-- Modal -->
+      <div class="modal" id="todo-modal">
+        <div class="modal-content">
+          <h3 id="modal-title">Add Todo</h3>
+          <form id="todo-form">
+            <label for="todo-title">Title</label>
+            <input id="todo_id" type="text" style="display: none">
+            <input type="text" id="todo-title" placeholder="Enter title" required />
+            <div class="status-field" style="display: none">
+              <label for="todo-status">Status</label>
+              <select id="todo-status">
+                <option value="false">Pending</option>
+                <option value="true">Completed</option>
+              </select>
+            </div>
+            <div class="modal-actions">
+              <button type="submit" id="submit-btn">Save</button>
+              <button type="button" id="cancel-btn">Cancel</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- Modal End -->
+       <div id="container"></div>
+    </main>
+    <div id="footer"></div>
+  </body>
+  <script src="./scripts/todos.js" type="module"></script>
+</html>
