@@ -11,6 +11,7 @@ form.addEventListener("submit", () => {
   let userObj = { email, password };
   // console.log(userObj)
   // create fetch request and send this data to BE for signup
+  console.log(`${baseUrl}/users/login`)
   fetch(`${baseUrl}/users/login`, {
     method: "POST",
     headers: {
